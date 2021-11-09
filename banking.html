@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Page</title>
+    <!-- Stylesheet -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="2.png" alt="" class="mx-auto w-1/4 mt-8"
+      /></a>
+      <h1 class="text-6xl text-center">
+        <span class="text-blue-400">Lets Get Some</span
+        ><span class="text-yellow-400 font-bold"> Moooony</span> !!!
+      </h1>
+    </header>
+
+    <main class="w-3/4 mx-auto">
+      <!-- Balance -->
+
+      <section class="mt-16">
+        <div class="grid grid-cols-3 gap-4">
+          <div
+            class="
+              text-center
+              bg-blue-400
+              rounded-lg
+              p-12
+              text-white
+              font-semibold
+            "
+          >
+            <h3 class="text-2xl">Deposite</h3>
+            <h3 class="text-4xl">$<span id="deposite-total">00</span></h3>
+          </div>
+          <div
+            class="
+              text-center
+              bg-yellow-400
+              rounded-lg
+              p-12
+              text-white
+              font-semibold
+            "
+          >
+            <h3 class="text-2xl">Withdraw</h3>
+            <h3 class="text-4xl">$<span id="withdraw-total">00</span></h3>
+          </div>
+          <div
+            class="
+              text-center
+              bg-blue-400
+              rounded-lg
+              p-12
+              text-white
+              font-semibold
+            "
+          >
+            <h3 class="text-2xl">Balance</h3>
+            <h3 class="text-4xl">$<span id="balance-total">1200</span></h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transection -->
+
+      <section>
+        <div class="grid grid-cols-2 mt-20 gap-8">
+          <div>
+            <h3 class="text-2xl mb-4">Please Diposite Here</h3>
+
+            <div class="pb-6">
+              <input
+                type="text"
+                id="deposite-input"
+                name=""
+                placeholder="Deposite Amount"
+                class="
+                  mb-4
+                  w-full
+                  border-2 border-yellow-400
+                  rounded-lg
+                  px-4
+                  py-1
+                "
+              /><br />
+
+              <button
+                id="deposite-btn"
+                class="
+                  bg-yellow-400
+                  border-2 border-yellow-400
+                  rounded-lg
+                  px-6
+                  py-2
+                  text-white
+                  font-medium
+                "
+              >
+                Deposite
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl mb-4">Please Withdraw Here</h3>
+
+            <div class="pb-6">
+              <input
+                type="text"
+                id="withdraw-input"
+                name=""
+                placeholder="Withdraw Amount"
+                class="
+                  mb-4
+                  w-full
+                  border-2 border-blue-400
+                  rounded-lg
+                  px-4
+                  py-1
+                "
+              /><br />
+
+              <button
+                id="withdraw-btn"
+                class="
+                  bg-blue-400
+                  border-2 border-blue-400
+                  rounded-lg
+                  px-6
+                  py-2
+                  text-white
+                  font-medium
+                "
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 class="text-6xl text-center mt-12 font-bold text-gray-700">
+          Thank you !!!
+        </h1>
+        <h3 class="text-3xl text-center mt-4 mb-20 text-gray-600">
+          For Banking With Us.
+        </h3>
+      </section>
+    </main>
+
+    <script src="js/banking.js"></script>
+  </body>
+</html>
